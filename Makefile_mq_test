@@ -1,0 +1,2 @@
+mq_test.o: mq_test.cpp mq.cpp log.pb.cc process.cpp logger.cpp log_buffer.cpp test_all.cpp
+	g++ -o mq_test.o -std=c++11 -I /usr/local/include -L /usr/local/lib mq_test.cpp mq.cpp log.pb.cc process.cpp logger.cpp log_buffer.cpp  test_all.cpp -lprotobuf -lgtest -lpthread
